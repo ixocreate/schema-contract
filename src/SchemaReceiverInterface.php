@@ -9,12 +9,12 @@ declare(strict_types=1);
 
 namespace Ixocreate\Contract\Schema;
 
+/**
+ * Interface SchemaReceiverInterface
+ * @package Ixocreate\Contract\Schema
+ * @deprecated
+ */
 interface SchemaReceiverInterface
 {
-    /**
-     * @param BuilderInterface $builder
-     * @param array $options
-     * @return SchemaInterface
-     */
     public function receiveSchema(BuilderInterface $builder, array $options = []): SchemaInterface;
 }
