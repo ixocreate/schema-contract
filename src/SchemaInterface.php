@@ -19,10 +19,10 @@ interface SchemaInterface extends \JsonSerializable
     public function withSchemaReceiver(SchemaReceiverInterface $schemaReceiver): SchemaInterface;
 
     /**
-     * @param array $elements
+     * @param ElementInterface[] $elements
      * @return SchemaInterface
      */
-    public function withElements(array $elements): SchemaInterface;
+    public function withElements(ElementInterface ...$elements): SchemaInterface;
 
     /**
      * @param ElementInterface $element
