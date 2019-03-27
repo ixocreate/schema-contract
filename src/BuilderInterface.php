@@ -9,6 +9,8 @@ declare(strict_types=1);
 
 namespace Ixocreate\Contract\Schema;
 
+use Ixocreate\Schema\Elements\GroupElement;
+
 interface BuilderInterface
 {
     /**
@@ -23,4 +25,11 @@ interface BuilderInterface
      * @return ElementInterface
      */
     public function get(string $element): ElementInterface;
+
+    /**
+     * @param string $name
+     * @param string $class
+     * @return GroupInterface
+     */
+    public function group(string $name, string $class = GroupElement::class): GroupInterface;
 }
